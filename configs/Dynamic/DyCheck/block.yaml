@@ -1,0 +1,12 @@
+inherit_from: ./configs/Dynamic/DyCheck/dycheck.yaml
+scene: block
+
+data:
+  input_folder: ROOT_FOLDER_PLACEHOLDER/block
+cam:  #intrinsic is different per scene in DyCheck
+  H: 960 
+  W: 720 
+  fx: 737.845110
+  fy: 737.845110
+  cx: 360.000000
+  cy: 480.000000

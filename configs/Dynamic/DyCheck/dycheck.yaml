@@ -1,0 +1,20 @@
+inherit_from: ./configs/droid_w.yaml
+
+dataset: 'dycheck'
+
+data:
+  root_folder: ./datasets/DyCheck
+  output: ./Outputs/DyCheck
+  
+cam:  #intrinsic is slightly different per seq
+  png_depth_scale: 1.0 #for depth image in npy format
+  H: 960
+  W: 720
+  fx: 735.619180
+  fy: 735.619180
+  cx: 360
+  cy: 480
+  distortion: [0, 0, 0, 0, 0]
+  H_out: 480
+  W_out: 360
+    

@@ -1,0 +1,16 @@
+inherit_from: ./configs/Dynamic/YouTube/youtube.yaml
+scene: stmoritz_02
+
+stride: 5
+
+data:
+  input_folder: ROOT_FOLDER_PLACEHOLDER/stmoritz_02
+cam:  #intrinsic is different per scene in YouTube Dataset
+  H: 720
+  W: 1280
+  H_out: 360
+  W_out: 640
+  fx: 687.455291
+  fy: 687.455291
+  cx: 640.000000
+  cy: 360.000000

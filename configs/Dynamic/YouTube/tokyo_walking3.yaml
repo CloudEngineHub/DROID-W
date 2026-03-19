@@ -1,0 +1,12 @@
+inherit_from: ./configs/Dynamic/YouTube/youtube.yaml
+scene: tokyo_walking3
+
+data:
+  input_folder: ROOT_FOLDER_PLACEHOLDER/tokyo_walking3
+cam:  #intrinsic is different per scene in YouTube Dataset
+  H: 1080
+  W: 1920
+  fx: 1002.263261 
+  fy: 1002.263261 
+  cx: 960.000000 
+  cy: 540.000000

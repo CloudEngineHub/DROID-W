@@ -1,0 +1,25 @@
+inherit_from: ./configs/droid_w.yaml
+
+dataset: 'youtube'
+
+data:
+  root_folder: ./datasets/YouTube
+  output: ./Outputs/YouTube
+  
+cam:  #intrinsic is slightly different per seq
+  png_depth_scale: 1.0 #for depth image in npy format
+  H: 1080
+  W: 1920
+  fx: 190.000000
+  fy: 190.000000
+  cx: 199.500000
+  cy: 199.500000
+  distortion: [0, 0, 0, 0, 0]
+  H_out: 360
+  W_out: 640
+
+tracking:
+  buffer: 500     # maximum number of keyframes that can be stored
+  force_keyframe_every_n_frames: -1 # set to negative value if you don't want to force to insert keyframes
+  uncertainty_params:
+    gamma_depth: 0.01
